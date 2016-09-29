@@ -9,7 +9,7 @@ var SongQueue = Backbone.Collection.extend({
       }
     }, this);
 
-    this.on('ended', function() {
+    this.on('ended', function(song) {
       this.shift();
       if (this.length > 0) {
         this.playFirst();
@@ -17,6 +17,8 @@ var SongQueue = Backbone.Collection.extend({
     }, this);
 
     this.on('dequeue', function(song) {
+      // FIXME: handle edge case where 0 songs in queue but then
+      // current song stops playing
       this.remove(song);
       console.log(this);
     });
