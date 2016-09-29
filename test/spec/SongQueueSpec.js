@@ -37,6 +37,7 @@ describe('SongQueue', function() {
     it('removes the song from the queue', function() {
       var songQueue = new SongQueue([songData1, songData2]);
       song2 = songQueue.at(1);
+      // debugger;
       expect(songQueue.length).to.equal(2);
       songQueue.at(0).trigger('ended');
       expect(songQueue.length).to.equal(1);
