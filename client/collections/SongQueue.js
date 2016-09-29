@@ -17,6 +17,7 @@ var SongQueue = Backbone.Collection.extend({
     }, this);
 
     this.on('dequeue', function() {
+      // FIXME: how to get current song to remove?
       this.remove();
     });
   },
