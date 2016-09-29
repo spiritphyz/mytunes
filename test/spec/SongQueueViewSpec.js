@@ -34,5 +34,14 @@ describe('SongQueueView', function() {
     view.collection.pop();
     expect(view.render).to.have.been.called;
   });
+  xit('FIXME: dequeues clicked songs', function() {
+    // FIXME: fully implement this test
+    sinon.spy(SongModel.prototype, 'dequeue');
+    var view = new SongQueueView({collection: fakeSongs});
+    var model = view.collection.models[0];
+    view.$el.children().first().click();
+    expect(model.dequeue).to.have.been.called;
 
+    SongModel.prototype.dequeue.restore();
+  });
 });
