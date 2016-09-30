@@ -7,6 +7,12 @@ var PlayerView = Backbone.View.extend({
 
   initialize: function() {
     this.$el.on('ended', function() {
+
+      var currCount = this.model.get('playCount');
+      currCount = currCount === '' ? 1 : currCount + 1;
+      this.model.set('playCount', currCount);
+      console.log('playCount for song is: ', this.model, this.model.get('playCount'));
+      console.log('Reached end');
       this.model.ended();
     }.bind(this));
   },

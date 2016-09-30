@@ -14,7 +14,7 @@ var AlbumView = Backbone.View.extend({
   },
 
   render: function() {
-    var $album = $('<img class="albumImage">').attr('src', this.model ? this.model.get('artwork_url') : '');
+    var $album = $('<img class="albumImage ratio img-responsive img-circle">').attr('src', this.model ? this.model.get('artwork_url') : '');
     //return this.$el.attr('src', this.model ? this.model.get('url') : '');
     return this.$el.html($album);
   }

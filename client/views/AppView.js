@@ -16,7 +16,7 @@ var AppView = Backbone.View.extend({
   },
 
   render: function() {
-    var $row = $('<div class="row"></div>');
+    var $row = $('<div class="background row"></div>');
     var $col1 = $('<div class="col-md-6"></div>').html([this.libraryView.$el, this.queueView.$el]);
     var $col2 = $('<div class=col-md-6"></div>').html(this.albumView.$el);
     var $bootCol = $row.html([$col1, $col2]);

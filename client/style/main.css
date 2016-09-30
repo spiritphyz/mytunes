@@ -1,10 +1,37 @@
 .albumImage {
   /*width: 600px;*/
   /*height: 600px;*/
-  width: 50%;
+  transform: translate(75px, 35px);
+  width: 40%;
   height: auto;
+}
+
+.headline {
+  font-family: 'PT Sans Caption', sans-serif;
+  font-size: 48px;
+}
+
+.bodyText {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 18px;
+  line-height: 24px
 }
 
 audio {
   width: 100%;
+}
+
+.btn-circle {
+  width: 30px;
+  height: 30px;
+  text-align: center;
+  padding: 6px 0;
+  font-size: 12px;
+  line-height: 1.428571429;
+  border-radius: 15px;
+}
+
+.background {
+  background-image: url('../images/floral.jpg');
+
 }

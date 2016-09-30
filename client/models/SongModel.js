@@ -2,7 +2,8 @@
 var SongModel = Backbone.Model.extend({
   defaults: {
     /* eslint-disable */
-    artwork_url: '' 
+    artwork_url: '',
+    playCount: '' 
     /* eslint-enable */ 
   },
 
