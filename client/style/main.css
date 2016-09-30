@@ -1,0 +1,10 @@
+.albumImage {
+  /*width: 600px;*/
+  /*height: 600px;*/
+  width: 50%;
+  height: auto;
+}
+
+audio {
+  width: 100%;
+}
